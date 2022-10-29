@@ -39,6 +39,12 @@ p {
   margin: 0;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*container*/
 .container {
     width: 1230px;
@@ -172,8 +178,12 @@ p {
 }
 
 .hero-title {
+    display: block;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
 
     font-weight: 900;
     font-size: 44px;
@@ -181,10 +191,16 @@ p {
     letter-spacing: 0.06em;
     color: var(--color-secondary);
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Button */
 .button {
+    display: block;
+    padding: 10px 32px;
+    margin-right: auto;
+    margin-left: auto;
+
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
