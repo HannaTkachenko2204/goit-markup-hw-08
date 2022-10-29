@@ -27,6 +27,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 h1,
@@ -35,24 +36,28 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
+}
+
+/*container*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-/*container*/
-.container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*header*/
@@ -235,14 +240,16 @@ img {
     clip: rect(0 0 0 0);
     margin: -1px;
 }
+
 /*our peculiarity*/
+
 .peculiarity {
     display: flex;
 }
 
-/*.peculiarity .list-peculiarity + .list-peculiarity {
+.peculiarity .list-peculiarity + .list-peculiarity {
     margin-left: 30px;
-}*/
+}
 
 .list-peculiarity {
     width: 270px;
@@ -268,13 +275,36 @@ img {
 
 /*section3*/
 
+.title-flex {
+    display: flex;
+}
+
+.title-flex .title-li-flex + .title-li-flex {
+    margin-left: 30px;
+}
+
 .section-title {
+    padding-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
+}
+
+.no-padding {
+    padding-top: 0;
 }
 
 /*section4*/
+
+.team-flex {
+    display: flex;
+}
+
+.team-flex .team-li-flex + .team-li-flex {
+    margin-left: 30px;
+}
 
 .section-bgcolor {
     background-color: var(--color-light-fon);
@@ -282,9 +312,12 @@ img {
 
 .section-fon {
     background-color: var(--color-secondary);
+    text-align: center;
 }
 
 .text-title {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -295,6 +328,11 @@ img {
     font-size: 16px;
     line-height: 1.19;
     color: var(--color-content);
+}
+
+.card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*footer*/
@@ -323,7 +361,7 @@ img {
 .portfolio-nav {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
+    padding-bottom: 50px;
 }
 
 .portfolio-nav .list + .list {
@@ -336,7 +374,17 @@ img {
 }
 
 .flex-element {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .foon {
