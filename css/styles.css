@@ -77,17 +77,19 @@ img {
 /*logo*/
 
 .link-logo {
-    display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 0;
-    width: 145px;
-
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--color-primary);
+}
+
+.logo-poz {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 0;
+    width: 145px;
 }
 
 .logo {
@@ -338,6 +340,27 @@ img {
 }
 
 /*footer*/
+
+.foot-look {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-foot {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.addres {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.info {
+    display: inline-block;
+    margin-bottom: 9px;
+}
 
 .links-addres {
     /*font-weight: 400; - по замовчуванню*/
