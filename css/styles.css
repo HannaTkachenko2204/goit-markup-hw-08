@@ -38,10 +38,11 @@ h5,
 h6,
 p,
 ul {
-  margin: 0;
+    margin: 0;
 }
 
 /*container*/
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -67,14 +68,12 @@ img {
     border: 1px solid #ECECEC;
 }
 
-/*header-menu*/
-
 .header-menu {
     display: flex;
     align-items: center;
 }
 
-/*logo*/
+/*logo header*/
 
 .link-logo {
     font-family: 'Raleway';
@@ -140,7 +139,7 @@ img {
     padding-bottom: 32px;
 }
 
-.site-nav .list + .list {
+.site-nav .list+.list {
     margin-left: 50px;
 }
 
@@ -169,7 +168,7 @@ img {
     margin-left: auto;
 }
 
-.contacts-nav .list + .list {
+.contacts-nav .list+.list {
     margin-left: 50px;
 }
 
@@ -204,7 +203,8 @@ img {
     text-align: center;
 }
 
-/* Button */
+/* buttons */
+
 .button {
     display: block;
     padding: 10px 32px;
@@ -251,14 +251,14 @@ img {
     display: flex;
 }
 
-.peculiarity .list-peculiarity + .list-peculiarity {
+.peculiarity .list-peculiarity+.list-peculiarity {
     margin-left: 30px;
 }
 
 .list-peculiarity {
     width: 270px;
 }
-    
+
 .li-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -270,7 +270,6 @@ img {
 }
 
 .li-text {
-    /*font-weight: 400; - по замовчуванню*/
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -283,7 +282,7 @@ img {
     display: flex;
 }
 
-.title-flex .title-li-flex + .title-li-flex {
+.title-flex .title-li-flex+.title-li-flex {
     margin-left: 30px;
 }
 
@@ -306,7 +305,7 @@ img {
     display: flex;
 }
 
-.team-flex .team-li-flex + .team-li-flex {
+.team-flex .team-li-flex+.team-li-flex {
     margin-left: 30px;
 }
 
@@ -328,7 +327,6 @@ img {
 }
 
 .text {
-    /*font-weight: 400; - по замовчуванню*/
     font-size: 16px;
     line-height: 1.19;
     color: var(--color-content);
@@ -351,7 +349,6 @@ img {
     margin-bottom: 20px;
 }
 
-
 .addres {
     display: inline-block;
     margin-bottom: 9px;
@@ -363,14 +360,9 @@ img {
 }
 
 .links-addres {
-    /*font-weight: 400; - по замовчуванню*/
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.studio-color {
-    color: var(--color-secondary);
 }
 
 .links-addres:focus {
@@ -381,6 +373,10 @@ img {
     color: var(--color-link);
 }
 
+.studio-color {
+    color: var(--color-secondary);
+}
+
 /*portfolio*/
 
 .portfolio-nav {
@@ -389,7 +385,7 @@ img {
     padding-bottom: 50px;
 }
 
-.portfolio-nav .list + .list {
+.portfolio-nav .list+.list {
     margin-left: 8px;
 }
 
@@ -427,7 +423,6 @@ img {
 }
 
 .box {
-    /*font-weight: 400; - по замовчуванню*/
     font-size: 16px;
     line-height: 1.88;
     color: var(--color-content);
