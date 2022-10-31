@@ -355,8 +355,12 @@ img {
 }
 
 .addres {
-    display: inline-block;
+    display: block;
     margin-bottom: 9px;
+}
+
+.addres:nth-child(3n) {
+    margin-bottom: 0px;
 }
 
 .links-addres {
