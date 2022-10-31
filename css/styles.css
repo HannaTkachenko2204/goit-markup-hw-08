@@ -65,7 +65,7 @@ img {
 
 .bg-color {
     background-color: var(--color-secondary);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-menu {
@@ -186,6 +186,11 @@ img {
     background-color: var(--color-dark-fon);
 }
 
+.hero-pd {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .hero-title {
     display: block;
     margin-top: 0;
@@ -291,7 +296,7 @@ img {
 }
 
 .section-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -377,7 +382,7 @@ img {
 .portfolio-nav {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .portfolio-nav .list+.list {
