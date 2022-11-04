@@ -345,6 +345,35 @@ img {
     font-size: 16px;
     line-height: 1.19;
     color: var(--color-content);
+    margin-bottom: 16px;
+}
+
+.sociale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sociale-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: #AFB1B8;
+}
+
+.sociale-link:hover,
+.sociale-link:focus {
+    background-color: var(--color-link);
+    color: var(--color-secondary);
+}
+
+.sociale-icon {
+    fill: currentColor;
 }
 
 .card {
@@ -393,11 +422,43 @@ img {
     color: var(--color-secondary);
 }
 
+.sociale-foot {
+    padding-top: 12px;
+    margin-left: 70px;
+}
+
 .text-foot {
+    margin-bottom: 20px;
+
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--color-secondary);
+}
+
+.foot-flex {
+    display: flex;
+}
+
+.sociale-link-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-secondary);
+}
+
+.sociale-link-foot:hover,
+.sociale-link-foot:focus {
+    background-color: var(--color-link);
+    color: var(--color-secondary);
+}
+
+.sociale-icon-foot {
+    fill: currentColor;
 }
 
 /*portfolio*/
