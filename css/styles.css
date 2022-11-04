@@ -182,13 +182,23 @@ img {
 
 /*section1*/
 
+.hero-pd {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .hero-bgcolor {
     background-color: var(--color-dark-fon);
 }
 
-.hero-pd {
-    padding-top: 200px;
-    padding-bottom: 200px;
+.hero-bgcolor-img {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: var(--color-dark-fon);
+    background-image: url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
