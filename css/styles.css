@@ -342,6 +342,8 @@ img {
     padding-bottom: 30px;
 }
 
+/*section5*/
+
 /*footer*/
 
 .foot-look {
@@ -378,6 +380,13 @@ img {
 }
 
 .studio-color {
+    color: var(--color-secondary);
+}
+
+.text-foot {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
     color: var(--color-secondary);
 }
 
