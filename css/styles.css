@@ -388,6 +388,35 @@ img {
 
 /*section5*/
 
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: var(--color-secondary);
+    color: #AFB1B8;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid var(--color-link);
+    color: var(--color-link);
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
 /*footer*/
 
 .foot-look {
