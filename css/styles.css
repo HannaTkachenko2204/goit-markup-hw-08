@@ -466,7 +466,6 @@ img {
 }
 
 .sociale-foot {
-    padding-top: 12px;
     margin-left: 70px;
 }
 
@@ -481,6 +480,7 @@ img {
 
 .foot-flex {
     display: flex;
+    align-items: baseline;
 }
 
 .sociale-link-foot {
