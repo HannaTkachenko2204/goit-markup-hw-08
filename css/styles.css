@@ -329,6 +329,28 @@ img {
     text-align: center;
 }
 
+.title-li-flex {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-text {
+    font-weight: 700;
+    line-height: 16.41px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
 /*section4*/
 
 .team-flex {
