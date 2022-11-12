@@ -113,6 +113,8 @@ img {
 }
 
 .links-nav {
+    position: relative;
+
     font-weight: 500;
     line-height: 1.14;
     font-size: 14px;
@@ -125,6 +127,30 @@ img {
 .links-nav:hover,
 .links-nav:focus {
     color: var(--color-link);
+}
+
+.links-nav::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    display: block;
+    width: 110%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--color-link);
+    opacity: 0;
+    transition: transform var(--anim), opacity var(--anim);
+}
+
+.links-nav:hover::after,
+.links-nav:focus::after {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
 }
 
 /*site-nav*/
@@ -585,6 +611,7 @@ img {
     align-items: center;
 
     background: rgba(33, 150, 243, 0.9);
+
     transition: transform var(--anim);
 }
 
