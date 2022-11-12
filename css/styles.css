@@ -599,7 +599,7 @@ img {
 
 .card-hover {
     display: block;
-    
+
     transition: box-shadow var(--anim);
 }
 
