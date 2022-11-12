@@ -112,6 +112,22 @@ img {
     color: var(--color-link);
 }
 
+.active-page::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+
+    transform: translateX(-50%);
+
+    display: block;
+    width: 110%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--color-link);
+}
+
 .links-nav {
     position: relative;
 
@@ -133,7 +149,7 @@ img {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -1px;
 
     transform: translateX(-50%);
 
@@ -149,7 +165,7 @@ img {
 
 .links-nav:hover::after,
 .links-nav:focus::after {
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%);
     opacity: 1;
 }
 
