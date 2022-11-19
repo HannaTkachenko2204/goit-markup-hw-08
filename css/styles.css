@@ -815,6 +815,13 @@ img {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    transition: fill var(--anim);
+}
+
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+    fill: var(--color-link);
 }
 
 .modal-text {
