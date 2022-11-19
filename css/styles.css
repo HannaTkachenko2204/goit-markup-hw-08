@@ -786,6 +786,7 @@ img {
 
     width: 528px;
     min-height: 581px;
+    line-height: normal;
 
     background-color: var(--color-secondary);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -908,55 +909,53 @@ img {
     outline-color: var(--color-link);
 }
 
+.modal-form-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .modal-form-agreement {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 8.38px;
+
+    color: var(--color-content);
+    user-select: none;
 
     margin-bottom: 30px;
 }
 
-.modal-form-checkbox {
-    appearance: none;
+.modal-form-agreement-text {
+    display: inline-block;
 
     width: 16px;
     height: 15px;
 
-    outline: 2px solid transparent;
-    outline-offset: -2px;
     border: 2px solid var(--color-primary);
     border-radius: 2px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' viewBox='0 0 13 10' fill='none'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-
-    transition: outline-color var(--anim), background-color var(--anim), background-size var(--anim);
 }
 
-.modal-form-checkbox:checked {
-    outline-color: var(--color-link);
+.modal-form-checkbox:checked+.modal-form-agreement-text {
+    border-color: var(--color-link);
     background-color: var(--color-link);
-    background-size: 11px 8px;
+    background-image: url('../images/check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    background-position: center;
 }
 
-.modal-form-agreement-flex {
+.modal-label-link {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 4px;
 }
 
-.modal-form-agreement-text {
-    line-height: 24px;
-    color: var(--color-content);
-    user-select: none;
-}
-
 .modal-form-agreement-link {
-    line-height: 24px;
     color: var(--color-link);
     text-underline-offset: 3px;
 }
