@@ -938,6 +938,8 @@ img {
 
     border: 2px solid var(--color-primary);
     border-radius: 2px;
+
+    transition: border-color var(--anim), background-color var(--anim);
 }
 
 .modal-form-checkbox:checked+.modal-form-agreement-text {
