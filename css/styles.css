@@ -391,7 +391,7 @@ img {
     font-weight: 700;
     line-height: 16.41px;
     text-transform: uppercase;
-    
+
     color: var(--color-secondary);
 }
 
@@ -883,7 +883,7 @@ img {
     transition: fiil var(--anim);
 }
 
-.modal-form-field:focus + .modal-form-icon {
+.modal-form-field:focus+.modal-form-icon {
     fill: var(--color-link);
 }
 
