@@ -592,6 +592,7 @@ img {
     height: 50px;
     padding: 15px 16px;
 
+    color: var(--color-content);
     background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
