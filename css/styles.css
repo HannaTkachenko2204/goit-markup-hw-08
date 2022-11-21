@@ -821,8 +821,8 @@ img {
     transition: fill var(--anim);
 }
 
-.modal-button:hover .modal-icon,
-.modal-button:focus .modal-icon {
+.modal-button:hover,
+.modal-button:focus {
     fill: var(--color-link);
 }
 
@@ -928,11 +928,9 @@ img {
 
     color: var(--color-content);
     user-select: none;
-
-    margin-bottom: 30px;
 }
 
-.modal-form-agreement-text {
+.modal-form-agreement-check {
     display: inline-block;
 
     width: 16px;
@@ -944,7 +942,7 @@ img {
     transition: border-color var(--anim), background-color var(--anim);
 }
 
-.modal-form-checkbox:checked+.modal-form-agreement-text {
+.modal-form-checkbox:checked+.modal-form-agreement-check {
     border-color: var(--color-link);
     background-color: var(--color-link);
     background-image: url('../images/check.svg');
@@ -957,13 +955,13 @@ img {
     display: flex;
     justify-content: center;
     gap: 4px;
+
+    margin-bottom: 30px;
 }
 
 .modal-form-agreement-link {
     color: var(--color-link);
-    text-underline-offset: 3px;
-
-    margin-bottom: 30px;
+    text-underline-offset: 3px;  
 }
 
 .modal-form-button {
