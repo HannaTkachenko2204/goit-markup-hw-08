@@ -924,6 +924,7 @@ img {
 
 .modal-form-agreement {
     display: flex;
+    align-items: center;
     gap: 8.38px;
 
     color: var(--color-content);
@@ -954,6 +955,7 @@ img {
 .modal-label-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 4px;
 
     margin-bottom: 30px;
