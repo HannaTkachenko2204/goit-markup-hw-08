@@ -1,0 +1,35 @@
+.peculiarity {
+    display: flex;
+}
+
+.peculiarity__list+.peculiarity__list {
+    margin-left: 30px;
+}
+
+.peculiarity__svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: var(--color-light-fon);
+    border-radius: 4px;
+}
+
+.peculiarity__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.peculiarity__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-content);
+}

@@ -1,0 +1,15 @@
+.header {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 0;
+}

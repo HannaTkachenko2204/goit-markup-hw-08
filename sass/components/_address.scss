@@ -1,0 +1,25 @@
+.address {
+    display: block;
+    margin-bottom: 9px;
+
+    &--color {
+        color: var(--color-secondary);
+    }
+    
+    &:nth-child(3n) {
+        margin-bottom: 0px;
+    }
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--color-link);
+    }
+}
