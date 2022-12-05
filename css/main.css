@@ -60,12 +60,6 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section--padding {
-  padding-bottom: 0;
-}
-.section--bg-light {
-  background-color: var(--color-light-fon);
-}
 
 .container {
   width: 1200px;
@@ -278,12 +272,16 @@ img {
 }
 
 .peculiarity {
+  padding-bottom: 0;
+}
+
+.peculiarity__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.peculiarity__list + .peculiarity__list {
+.peculiarity__item + .peculiarity__item {
   margin-left: 30px;
 }
 
@@ -320,17 +318,17 @@ img {
   color: var(--color-content);
 }
 
-.creation {
+.creation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.creation__list {
+.creation__item {
   position: relative;
 }
 
-.creation__list + .creation__list {
+.creation__item + .creation__item {
   margin-left: 30px;
 }
 
@@ -359,23 +357,27 @@ img {
 }
 
 .team {
+  background-color: var(--color-light-fon);
+}
+
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.team--poz {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-.team__list {
+.team__item {
   background-color: var(--color-secondary);
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.team__item--poz {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-.team__list + .team__list {
+.team__item + .team__item {
   margin-left: 30px;
 }
 
@@ -458,7 +460,7 @@ img {
   fill: currentColor;
 }
 
-.client {
+.client__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,14 +522,14 @@ img {
   color: var(--color-secondary);
 }
 
-.address {
+.address__item {
   display: block;
   margin-bottom: 9px;
 }
-.address--color {
+.address__item--color {
   color: var(--color-secondary);
 }
-.address:nth-child(3n) {
+.address__item:nth-child(3n) {
   margin-bottom: 0px;
 }
 
@@ -623,7 +625,7 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-nav__list + .portfolio-nav__list {
+.portfolio-nav__item + .portfolio-nav__item {
   margin-left: 8px;
 }
 

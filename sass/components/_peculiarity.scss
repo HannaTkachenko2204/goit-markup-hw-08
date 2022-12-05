@@ -1,8 +1,12 @@
 .peculiarity {
+    padding-bottom: 0;
+}
+
+.peculiarity__list {
     display: flex;
 }
 
-.peculiarity__list+.peculiarity__list {
+.peculiarity__item+.peculiarity__item {
     margin-left: 30px;
 }
 

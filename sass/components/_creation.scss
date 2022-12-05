@@ -1,12 +1,12 @@
-.creation {
+.creation__list {
     display: flex;
 }
 
-.creation__list {
+.creation__item {
     position: relative;
 }
 
-.creation__list+.creation__list {
+.creation__item+.creation__item {
     margin-left: 30px;
 }
 
