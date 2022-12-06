@@ -23,21 +23,12 @@
         background-color: var(--color-link);
     }
     
-    &--foot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
+    &--color {
         color: var(--color-secondary);
-    
-        transition: color var(--anim), background-color var(--anim);
+        background-color: rgba(255, 255, 255, 0.1);
     
         &:hover,
         &:focus {
-            color: var(--color-secondary);
             background-color: var(--color-link);
         }
     }
@@ -45,8 +36,4 @@
 
 .sociale__icon {
     fill: currentColor;
-
-    &--foot {
-        fill: currentColor;
-    }
 }
