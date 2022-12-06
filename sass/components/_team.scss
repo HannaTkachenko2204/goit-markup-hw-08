@@ -1,7 +1,9 @@
 .team {
     @include section;
     
-    background-color: var(--color-light-fon);
+    &--bgcolor-light {
+        background-color: var(--color-light-fon);
+    }
 }
 
 .team__list {

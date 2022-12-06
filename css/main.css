@@ -133,7 +133,7 @@ img {
   color: var(--color-primary);
   width: 145px;
 }
-.logo--color {
+.logo--color-link {
   color: var(--color-link);
 }
 
@@ -396,6 +396,8 @@ img {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.team--bgcolor-light {
   background-color: var(--color-light-fon);
 }
 
@@ -553,7 +555,7 @@ img {
   display: block;
   margin-bottom: 9px;
 }
-.address__item--color {
+.address__item--color-sec {
   color: var(--color-secondary);
 }
 .address__item:nth-child(3n) {
