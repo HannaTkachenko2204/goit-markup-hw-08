@@ -1,31 +1,17 @@
 .nav {
     display: flex;
     align-items: center;
-
-    &--current {
-        color: var(--color-link);
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -1px;
-        
-            transform: translateX(-50%);
-        
-            display: block;
-            width: 110%;
-            height: 4px;
-            border-radius: 2px;
-        
-            background-color: var(--color-link);
-        }
-    }  
 }
 
 .nav__list {
+    @extend %list;
+    
     display: flex;
     margin-left: 93px;
+}
+
+.nav__item {
+    @extend %list;
 }
 
 .nav__item+.nav__item {
@@ -33,6 +19,8 @@
 }
 
 .nav__link {
+    @extend %link;
+
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -72,5 +60,25 @@
         background-color: var(--color-link);
         opacity: 0;
         transition: transform var(--anim), opacity var(--anim);
+    }
+
+    &--current {
+        color: var(--color-link);
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -1px;
+        
+            transform: translateX(-50%);
+        
+            display: block;
+            width: 110%;
+            height: 4px;
+            border-radius: 2px;
+        
+            background-color: var(--color-link);
+        }
     }
 }

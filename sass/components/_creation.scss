@@ -1,8 +1,16 @@
+.creation {
+    @include section;
+}
+
 .creation__list {
+    @extend %list;
+
     display: flex;
 }
 
 .creation__item {
+    @extend %list;
+    
     position: relative;
 }
 

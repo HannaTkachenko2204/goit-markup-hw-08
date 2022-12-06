@@ -1,4 +1,6 @@
 .sociale {
+    @extend %list;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +8,8 @@
 }
 
 .sociale__link {
+    @extend %link;
+
     display: flex;
     justify-content: center;
     align-items: center;

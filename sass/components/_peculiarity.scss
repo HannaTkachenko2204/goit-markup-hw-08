@@ -1,9 +1,15 @@
 .peculiarity {
-    padding-bottom: 0;
+    @include section(120px, 0);
 }
 
 .peculiarity__list {
+    @extend %list;
+
     display: flex;
+}
+
+.peculiarity__item {
+    @extend %list;
 }
 
 .peculiarity__item+.peculiarity__item {

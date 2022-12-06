@@ -1,4 +1,6 @@
 .box-card {
+    @extend %link;
+
     display: block;
 
     transition: box-shadow var(--anim);

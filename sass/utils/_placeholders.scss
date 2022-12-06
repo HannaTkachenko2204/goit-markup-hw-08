@@ -1,4 +1,10 @@
-%section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+%list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+%link {
+    text-decoration: none;
+    font-style: normal;
 }

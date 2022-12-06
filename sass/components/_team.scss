@@ -1,8 +1,12 @@
 .team {
+    @include section;
+    
     background-color: var(--color-light-fon);
 }
 
 .team__list {
+    @extend %list;
+    
     display: flex;
 }
 

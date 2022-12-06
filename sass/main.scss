@@ -2,10 +2,12 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
+@import './utils/mixins';
 
 //base styles
 @import './base/base';
 @import './base/reset';
+@import './base/card-set';
 
 //components styles
 @import './components/section';
@@ -27,7 +29,6 @@
 @import './components/subscribe';
 @import './components/footer_form';
 @import './components/portfolio-nav';
-@import './components/card-set';
 @import './components/box-card';
 @import './components/backdrop';
 @import './components/modal';

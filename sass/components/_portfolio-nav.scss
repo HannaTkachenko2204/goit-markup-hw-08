@@ -1,7 +1,13 @@
 .portfolio-nav {
+    @extend %list;
+
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+.portfolio-nav__item {
+    @extend %list;
 }
 
 .portfolio-nav__item+.portfolio-nav__item {

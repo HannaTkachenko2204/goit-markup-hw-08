@@ -1,6 +1,12 @@
 .contacts {
+    @extend %list;
+
     display: flex;
     margin-left: auto;
+}
+
+.contacts__item {
+    @extend %list;
 }
 
 .contacts__item+.contacts__item {
@@ -8,6 +14,8 @@
 }
 
 .contacts__link {
+    @extend %link;
+
     display: flex;
     align-items: center;
     gap: 10px;

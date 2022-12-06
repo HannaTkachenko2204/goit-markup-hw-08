@@ -1,4 +1,10 @@
+.address {
+    @extend %list;
+}
+
 .address__item {
+    @extend %list;
+
     display: block;
     margin-bottom: 9px;
 
@@ -12,6 +18,8 @@
 }
 
 .address__link {
+    @extend %link;
+
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
