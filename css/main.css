@@ -250,10 +250,10 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--color-dark-fon);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
@@ -303,7 +303,7 @@ img {
 }
 
 .peculiarity {
-  padding-top: 120px;
+  padding-top: 94px;
   padding-bottom: 0;
 }
 
@@ -351,8 +351,8 @@ img {
 }
 
 .creation {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .creation__list {
@@ -394,8 +394,8 @@ img {
 }
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team--bgcolor-light {
   background-color: var(--color-light-fon);
@@ -485,8 +485,8 @@ img {
 }
 
 .client {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .client__list {
