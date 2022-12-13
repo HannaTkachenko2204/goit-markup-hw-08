@@ -6,9 +6,13 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--color-primary);
-    width: 145px;
+    width: 134px;
 
     &--color-link {
         color: var(--color-link);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 145px;
     }
 }
