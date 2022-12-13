@@ -25,7 +25,27 @@
 }
 
 .team__item+.team__item {
-    margin-left: 30px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+
+        &:nth-last-child(-n+2) {
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+
+        &:nth-last-child(-n+2) {
+            margin-top: 0;
+        }
+    }
 }
 
 .team__title {
