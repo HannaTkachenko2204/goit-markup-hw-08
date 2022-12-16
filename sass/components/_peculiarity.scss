@@ -1,5 +1,9 @@
 .peculiarity {
     @include section;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
 
 .peculiarity__list {

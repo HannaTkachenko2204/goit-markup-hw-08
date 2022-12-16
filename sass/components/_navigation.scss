@@ -5,9 +5,17 @@
 
 .nav__list {
     @extend %list;
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
     
-    display: flex;
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 92px;
+    }
 }
 
 .nav__item {
@@ -15,7 +23,14 @@
 }
 
 .nav__item+.nav__item {
-    margin-left: 50px;
+    
+    @media screen and (min-width: 768px) {
+        margin-left: 54px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+    }
 }
 
 .nav__link {

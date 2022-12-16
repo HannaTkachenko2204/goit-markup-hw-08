@@ -1,5 +1,9 @@
 .creation {
     @include section;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .creation__list {
