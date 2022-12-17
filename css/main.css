@@ -774,12 +774,6 @@ img {
       flex-wrap: wrap;
   gap: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     gap: 60px;
