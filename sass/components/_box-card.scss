@@ -1,7 +1,9 @@
 .box-card {
     @extend %link;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition: box-shadow var(--anim);
 
@@ -46,6 +48,8 @@
 }
 
 .box-card__meta {
+    flex-grow: 1;
+    
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;

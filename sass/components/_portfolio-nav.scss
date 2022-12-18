@@ -1,22 +1,46 @@
+.portfolio {
+    @include section;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
 .portfolio-nav {
     @extend %list;
 
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-nav__item {
     @extend %list;
 }
 
-.portfolio-nav__item+.portfolio-nav__item {
-    margin-left: 8px;
+.portfolio-nav__item:nth-last-child(-n + 2) {
+    margin-top: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .portfolio-nav__button {
     display: inline-block;
-    padding: 6px 22px;
+    padding: 6px 25px;
 
     font-family: 'Roboto';
     font-weight: 500;
