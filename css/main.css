@@ -718,6 +718,20 @@ img {
   gap: 30px;
 }
 
+.client__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
 .client__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1405,8 +1419,8 @@ img {
   padding: 48px 40px;
   background-color: var(--color-secondary);
   z-index: 999;
-  -webkit-transform: translateX(400%);
-          transform: translateX(400%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
